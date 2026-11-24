@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="منوی دیجیتال BARREL Café & restaurant">
+  <title>BARREL | Café & restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="brand-header">
+    <button class="back-button" id="backButton" aria-label="بازگشت" hidden>←</button>
+    <a class="brand" href="#" id="brandHome" aria-label="صفحه اصلی">
+      <span class="brand-name">barrel</span>
+      <span class="brand-subtitle">Café &amp; restaurant</span>
+    </a>
+    <span class="header-spacer"></span>
+  </header>
+
+  <main>
+    <section class="screen welcome-screen active" id="welcomeScreen">
+      <div class="eyebrow">WELCOME TO BARREL</div>
+      <h1>منوی مورد نظرت رو انتخاب کن</h1>
+      <p class="welcome-copy">تجربه‌ای خوش‌طعم، با انتخاب تو شروع می‌شه.</p>
+      <div class="choice-grid">
+        <button class="choice-card" data-menu="cafe">
+          <span class="choice-art cafe-art"><span>☕</span><i>✦</i></span>
+          <span class="choice-title">منوی کافه</span>
+          <span class="choice-caption">COFFEE · DRINKS · DESSERT</span>
+          <span class="choice-arrow">←</span>
+        </button>
+        <button class="choice-card" data-menu="restaurant">
+          <span class="choice-art restaurant-art"><span>♨</span><i>✦</i></span>
+          <span class="choice-title">منوی رستوران</span>
+          <span class="choice-caption">BREAKFAST · FOOD · MORE</span>
+          <span class="choice-arrow">←</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="screen menu-screen" id="menuScreen">
+      <aside class="sidebar" id="sidebar" aria-label="دسته‌بندی منو">
+        <div class="sidebar-label">دسته‌ها</div>
+        <nav id="categoryNav"></nav>
+        <button class="sidebar-home" id="changeMenu">⇄ <span>تغییر منو</span></button>
+      </aside>
+      <section class="products-area">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow" id="menuEyebrow">BARREL MENU</div>
+            <h1 id="categoryTitle">قهوه</h1>
+            <p id="categoryCount"></p>
+          </div>
+          <button class="mobile-change" id="mobileChange">تغییر منو</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>BARREL</span><span>CRAFTED WITH TASTE</span></footer>
+  <script src="menu-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
