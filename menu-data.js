@@ -1005,6 +1005,24 @@ const MENU_DATA = {
       ]
     },
     {
+      name: "سالاد",
+      icon: "🥗",
+      items: [
+        {
+          name: "سالاد سزار",
+          description: "",
+          price: "",
+          image: ""
+        },
+        {
+          name: "سالاد فصل",
+          description: "",
+          price: "",
+          image: ""
+        }
+      ]
+    },
+    {
       "name": "پیتزا",
       "icon": "🍕",
       "items": [
@@ -1054,3 +1072,4 @@ const MENU_DATA = {
     }
   ]
 };
+
