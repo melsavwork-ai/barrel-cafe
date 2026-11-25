@@ -14,7 +14,7 @@ function showWelcome() {
   welcomeScreen.classList.add('active');
   menuScreen.classList.remove('active');
   backButton.hidden = true;
-  window.scrollTo({top:0, behavior:'smooth'});
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function openMenu(menuKey) {
@@ -24,7 +24,7 @@ function openMenu(menuKey) {
   menuScreen.classList.add('active');
   backButton.hidden = false;
   renderMenu();
-  window.scrollTo({top:0, behavior:'smooth'});
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderMenu() {
@@ -75,7 +75,7 @@ function renderMenu() {
 
     const description = document.createElement('p');
     description.className = 'product-description';
-    description.textContent = item.description || 'توضیحات این محصول به‌زودی اضافه می‌شود.';
+    description.textContent = item.description || '';
 
     const bottom = document.createElement('div');
     bottom.className = 'product-bottom';
